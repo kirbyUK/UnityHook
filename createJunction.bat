@@ -1,10 +1,12 @@
 @echo off
+CHCP 65001
+
 REM This script sets up a link to the binaries of Hearthstone.
 REM Change the HS_INSTALL_PATH value below before running this script.
 
 REM Change the following location to the hearthstone installation folder!
 REM Don't forget to include the final slash
-SET HS_INSTALL_PATH=D:\Program Files (x86)\Hearthstone\
+SET HS_INSTALL_PATH=C:\Users\%USERNAME%\AppData\Roaming\Pokémon Trading Card Game Online\PokemonTradingCardGameOnline\
 
 REM ***************************************
 REM DO NOT change anything below this line!

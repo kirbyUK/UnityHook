@@ -33,27 +33,31 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\hs_link\Hearthstone_Data\Managed\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="core">
+      <HintPath>..\hs_link\Pokemon Trading Card Game Online_Data\Managed\core.dll</HintPath>
     </Reference>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\hs_link\Hearthstone_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Google.Protobuf">
+    <Reference Include="Google.Protobuf, Version=3.3.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\PayloadFormat\Debug\net35\Google.Protobuf.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Security" />
     <Reference Include="PayloadFormat">
       <HintPath>..\lib\PayloadFormat\Debug\net35\PayloadFormat.dll</HintPath>
     </Reference>
+    <Reference Include="pie-core">
+      <HintPath>..\hs_link\Pokemon Trading Card Game Online_Data\Managed\pie-core.dll</HintPath>
+    </Reference>
+    <Reference Include="pie-src">
+      <HintPath>..\hs_link\Pokemon Trading Card Game Online_Data\Managed\pie-src.dll</HintPath>
+    </Reference>
+    <Reference Include="sausage-core">
+      <HintPath>..\hs_link\Pokemon Trading Card Game Online_Data\Managed\sausage-core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="UnityEngine">
-      <HintPath>..\hs_link\Hearthstone_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\AppData\Roaming\Pokémon Trading Card Game Online\PokemonTradingCardGameOnline\Pokemon Trading Card Game Online_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -62,15 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\HookRegistry.cs" />
-    <Compile Include="src\archived\IncomingPackets.cs" />
-    <Compile Include="src\archived\OutgoingPackets.cs" />
-    <Compile Include="src\hooks\SocketHook.cs" />
+    <Compile Include="src\hooks\LogExport.cs" />
     <Compile Include="src\hooks\HookTemplate.cs" />
-    <Compile Include="src\packetdumper\DumpServer.cs" />
-    <Compile Include="src\hooks\SSLDisable.cs" />
-    <Compile Include="src\packetdumper\PegasusPacketDecoder.cs" />
     <Compile Include="src\ReferenceLoader.cs" />
-    <Compile Include="src\hooks\SslStreamHook.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

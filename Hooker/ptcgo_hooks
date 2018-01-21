@@ -1,0 +1,10 @@
+// EXAMPLE HOOKS
+// Comments in this syntax are allowed!
+// Empty lines will be skipped..
+
+//* Your version of Hookregistry must have a corresponding logic function for each method listed below!
+//* Hooking a method not expected by HookRegistry will have no effect on game execution.
+
+// Hook game log
+CakeGameLog::PlayToBench
+CakeGameLog::PlayToActive

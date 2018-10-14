@@ -5,6 +5,6 @@
 //* Your version of Hookregistry must have a corresponding logic function for each method listed below!
 //* Hooking a method not expected by HookRegistry will have no effect on game execution.
 
-// Hook game log
-CakeGameLog::PlayToBench
-CakeGameLog::PlayToActive
+dwd.core.wargServer.raw.RawReader::Read
+dwd.core.wargServer.WargSocket::Write
+#dwd.core.wargServer.WargSocket::Connect

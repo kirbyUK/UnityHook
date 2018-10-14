@@ -15,6 +15,7 @@ namespace GameKnowledgeBase
 			"core.dll",
 			"pie-core.dll",
 			"pie-src.dll",
+			"ProtobufMessages.dll",
 			"sausage-core.dll",
 			"System.dll",
 			"UnityEngine.dll",

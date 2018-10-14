@@ -49,6 +49,10 @@
     <Reference Include="pie-src">
       <HintPath>..\hs_link\Pokemon Trading Card Game Online_Data\Managed\pie-src.dll</HintPath>
     </Reference>
+    <Reference Include="ProtobufMessages, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AppData\Roaming\Pokémon Trading Card Game Online\PokemonTradingCardGameOnline\Pokemon Trading Card Game Online_Data\Managed\ProtobufMessages.dll</HintPath>
+    </Reference>
     <Reference Include="sausage-core">
       <HintPath>..\hs_link\Pokemon Trading Card Game Online_Data\Managed\sausage-core.dll</HintPath>
     </Reference>
@@ -66,7 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\HookRegistry.cs" />
-    <Compile Include="src\hooks\LogExport.cs" />
+    <Compile Include="src\hooks\PacketDump.cs" />
     <Compile Include="src\hooks\HookTemplate.cs" />
     <Compile Include="src\ReferenceLoader.cs" />
   </ItemGroup>
